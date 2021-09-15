@@ -1,0 +1,22 @@
+append - add an element at the end of the list
+insert - add an element at a particular position in the list
+x.insert(0, "Vikram")
+
+del - remove item from list
+eg. del x[0] - remove first element from x 
+
+remove - remove item based on pattern only removes first item
+x.remove["Vikram"] - removes first instance of Vikram from x 
+
+pop - either remove last item from list if none specified or remove from a particular position if specified
+eg. x.pop or x.pop(2)
+
+Sorting -
+
+sort - permanently sort list in alphabetical order (lower case)
+
+sorted - temporarily sort list in alphabetical order (lower case)
+
+reverse - permanently reverse list 
+
+len - find length of list
