@@ -10,4 +10,4 @@ print(f"My friend's pizza toppings are{friend_pizza_toppings}")
 
 print("My favorite pizza toppings are:\n\t")
 for toppings in fav_pizza_toppings:
-	print(toppings.title())
+    print(toppings.title())

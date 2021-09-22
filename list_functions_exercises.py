@@ -12,7 +12,7 @@ print(sum(count_to_million))
 odd_numbers = []
 odd_numbers = [i for i in range(1,20,2)]
 for odd in odd_numbers:
-	print(odd)
+    print(odd)
 
 print(f"The first three items in the list are: {odd_numbers[0:3]}")
 

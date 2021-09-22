@@ -17,7 +17,7 @@ guest_list.insert(1,"Ratan Tata")
 guest_list.insert(2,"Dr.Manmohan Singh")
 guest_list.append("Barack Obama")
 for guests in guest_list:
-	print(f"Dear {guests}, \n \t You are cordially invited to the dinner party")
+    print(f"Dear {guests}, \n \t You are cordially invited to the dinner party")
 
 uninvited_guests=[]
 ui_1 = guest_list.pop(2)
@@ -30,7 +30,7 @@ uninvited_guests.append(ui_3)
 uninvited_guests.append(ui_4)
 
 for ug in uninvited_guests:
-	print(f"Dear {ug}, \n \t Due to delayed delivery of the table by Amazon, we will fail to accomodate you, so we are rescinding our invite. Please blame {ui_4}.") 
+    print(f"Dear {ug}, \n \t Due to delayed delivery of the table by Amazon, we will fail to accomodate you, so we are rescinding our invite. Please blame {ui_4}.") 
 
 del guest_list[1]
 del guest_list[0]
