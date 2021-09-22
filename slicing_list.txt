@@ -1,0 +1,20 @@
+Slicing lists
+x[0:3] - from 0, 1, 2 of list
+x[:4] - First 4 of list excluding the 4th index
+x[1:] - From 1st index omitting 0 till end
+x[-3:] - Last 3 of the list
+
+Looping through slice
+for i in x[:3]:
+ print(i)
+
+Copying a list
+x=[1,3,4]
+y = x[:]
+print(y)
+#[1,3,4]
+
+Both these lists are different - just copied, if we modify x the changes will not reflect in y
+
+For it to reflect in both lists - 
+x = y
