@@ -8,5 +8,6 @@ print("My pizza toppings are:{}".format(fav_pizza_toppings))
 
 print(f"My friend's pizza toppings are{friend_pizza_toppings}")
 
+print("My favorite pizza toppings are:\n\t")
 for toppings in fav_pizza_toppings:
-	print(f"My favorite pizza topping is:\n\t {toppings}")
+	print(toppings.title())
