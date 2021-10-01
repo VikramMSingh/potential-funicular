@@ -1,0 +1,17 @@
+to print key and dictionary:
+for keys, values in dictionary:
+    print(key - value)
+
+to loop through dictionary in ascending order:
+for keys, values in sorted(dictionary):
+    print(key - value)
+
+to loop only through values:
+for values in dictionary.values():
+    print(values) - will exclude keys
+
+to exclude duplicated values while looping through a dictionary we convert it to a set
+for values in set(dictionary.values()):
+    print(values) - will exclude dup values
+
+
