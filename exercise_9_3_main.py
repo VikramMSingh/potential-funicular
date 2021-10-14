@@ -1,4 +1,16 @@
-from exercises_9_3_classes import User
+from exercises_9_3_classes import User,Privileges,Admin
 first_user = User("vikram","singh","vikram@vikram.com")
 first_user.describe_user()
 first_user.greet_user()
+first_user.count_login_attempts()
+first_user.increment_login_attempt()
+first_user.increment_login_attempt()
+first_user.count_login_attempts()
+first_user.reset_login_attempt()
+first_user.count_login_attempts()
+
+admin_user = Admin("shalini", "singh", "shalini@shalini.com")
+admin_user.describe_user()
+#admin_user.add_privileges("Ban a user")
+#admin_user.add_privileges("Unlock a user")
+admin_user.privileges.show_privileges()
