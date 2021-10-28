@@ -1,2 +1,3 @@
 push_to_repo.sh
 __pycache__
+*.txt
