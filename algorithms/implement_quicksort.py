@@ -10,14 +10,16 @@ def quick_sort(arr):
             temp = arr[i]
             arr[i] = arr[p]
             arr[p] = temp
+            print(f"p:{p}, {arr[i]}, {arr[p]}, {temp}")
     temp = arr[0]
     arr[0] = arr[p]
     arr[p] = temp
+    print(f"p is {p}")
     left = quick_sort(arr[0:p])
     right = quick_sort(arr[p+1:l])
     arr = left + [arr[p]] + right
     return arr
-ar = [7,1,4,8,6,8,9]
+ar = [5,2,4,7,6,9]
 r = quick_sort(ar)
 print(f"Sorted array is : {r}")
     

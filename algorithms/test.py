@@ -1,0 +1,2 @@
+print("John\nCharles")
+
