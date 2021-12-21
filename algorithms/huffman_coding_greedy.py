@@ -1,5 +1,5 @@
 # Creating tree nodes
-string = "GDGHSGGGGHSGFRT"
+string = "GDGHSGGGGHSGF"
 class NodeTree(object):
     def __init__(self,left=None, right=None):
         self.left = left
@@ -34,6 +34,8 @@ for c in string:
 freq = sorted(freq.items(), key = lambda x:x[1], reverse=True)
 nodes = freq 
 
+print(nodes)
+
 while len(nodes) > 1:
     (key1, c1) = nodes[-1]
     (key2, c2) = nodes[-2]
@@ -47,5 +49,19 @@ huffmanCode = huffman_code_tree(nodes[0][0])
 
 print(' Char | Huffman code ')
 print('-----------------------')
+huffman_bit = 0 
+chars_byte = 0
+huff_code_bit = 0
 for (char, frequency) in freq:
     print(' %-4r |%12s ' % (char, huffmanCode[char]))
+    huffman_bit += frequency * len(huffmanCode[char])
+    chars_byte += 8
+    huff_code_bit += len(huffmanCode[char])
+
+    
+
+original_bytes = len(string) * 8 
+huffman_size = huff_code_bit + huffman_bit + chars_byte
+print(f"Huffman only word : {huffman_bit}")
+print(f"Original bytes : {original_bytes}")
+print(f"Huffman: {huffman_size}")
