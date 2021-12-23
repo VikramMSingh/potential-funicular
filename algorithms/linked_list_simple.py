@@ -13,15 +13,15 @@ class node:
 
 class linked_list:
     def __init__(self):
-        self.head = node()    #blank will not have data 
+        self.head = None    #blank will not have any data 
     
     def append(self,data):    # add elements to the ll
         new_node = node(data)
         if self.head:
-            cur = self.head
-            while cur.next != None:  #Unless it is the last element of the ll
-                cur = cur.next
-            cur.next = new_node
+            last_node = self.head
+            while last_node.next != None:  #Unless it is the last element of the ll
+                last_node = last_node.next
+            last_node.next = new_node
         else:
             self.head = new_node
         #Traverse through the ll & create new node @ the end 
