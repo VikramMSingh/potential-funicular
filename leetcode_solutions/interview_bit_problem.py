@@ -1,4 +1,4 @@
-## wt = [20,50,35] ; cap = 50
+## wt = [20,50, 40] ; cap = 50
 ## val = [60, 100, 140]
 def solution(weights, values, capacity):
     n = len(values)
@@ -20,7 +20,7 @@ def solution(weights, values, capacity):
     return optimized, weight, value
     
 
-wt = [20,50,35]
+wt = [20,50,40]
 val = [60,100,140] 
 cap = 50
 ans = solution(wt,val,cap)
