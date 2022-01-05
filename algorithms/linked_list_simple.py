@@ -72,5 +72,16 @@ class linked_list:
                 return
             cur_index += 1
 
+    def reverse(self):
+        cur = self.head
+        foll = self.head
+        prev = None 
+        while cur != None:
+            foll = foll.next
+            cur.next = prev
+            prev = cur
+            cur = foll
+        self.head = prev
+
 if __name__ == "__main__":
     linked_list = linked_list()
