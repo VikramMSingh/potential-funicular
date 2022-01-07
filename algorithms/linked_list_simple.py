@@ -64,12 +64,19 @@ class linked_list:
             return None 
         cur_index = 0
         cur = self.head
-        while True:
-            last_node = cur
-            cur = cur.next
-            if index == cur_index:
-                last_node.next = cur.next
+        while cur != None:
+            last_node = cur           #Initialize pointer @ head
+            if index == 0:
+                self.head = cur.next  #Move head to next node 
+                last_node = None      #Delete the next node 
                 return
+            elif index == cur_index:   
+                cur = last_node.next     #Move cur pointer to next
+                p = last_node.next
+                last_node.next = cur.next #Skip over the node we are deleting
+                print(f"Deleting node {p} with value {p.data}")
+                p = None  
+                return 
             cur_index += 1
 
     def reverse(self):
