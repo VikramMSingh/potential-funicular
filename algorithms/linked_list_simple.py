@@ -82,6 +82,22 @@ class linked_list:
             prev = cur
             cur = foll
         self.head = prev
+    
+    def sum_linked(self):
+        cur = self.head
+        sum_ll = 0 
+        while cur != None:
+            sum_ll += cur.data
+            cur = cur.next 
+        print(sum_ll) 
 
+    def max_val(self):
+        cur = self.head
+        max_val = -32678
+        while cur != None:
+            if cur.data > max_val:
+                max_val = cur.data
+            cur = cur.next
+        print(max_val)
 if __name__ == "__main__":
     linked_list = linked_list()
