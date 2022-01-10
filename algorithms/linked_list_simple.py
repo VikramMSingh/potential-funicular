@@ -106,5 +106,23 @@ class linked_list:
                 max_val = cur.data
             cur = cur.next
         print(max_val)
+
+    def count_ll(self):
+        cur = self.head
+        count = 0 
+        while cur != None:
+            count += 1
+            cur = cur.next
+        print(count)
+    
+    def search(self, value):
+        cur = self.head
+        while cur != None:
+            if cur.data == value:
+                print(cur) 
+                break; 
+            cur = cur.next
+        print(cur)
+
 if __name__ == "__main__":
     linked_list = linked_list()
