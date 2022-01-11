@@ -1,5 +1,6 @@
 from linked_list_simple import *
 ll = linked_list()
+ll_2 = linked_list()
 ll.append(1)
 ll.append(2)
 ll.append(3)
@@ -17,3 +18,6 @@ ll.display()
 ll.count_ll()
 ll.search(1)
 ll.search(6)
+ll_2.append(4)
+ll_2.append(12)
+ll_2.display()
