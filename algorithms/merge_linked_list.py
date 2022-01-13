@@ -1,5 +1,5 @@
 def mergeSortedLL(list1, list2):
-    last = 0
+    last = linkedlist(0)  #Zero node of the ll
     third = last
     while list1 != None and list2 != None:
         if list1.data < list2.data:
