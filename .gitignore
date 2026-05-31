@@ -2,4 +2,5 @@ push_to_repo.sh
 __pycache__
 *.txt
 *.csv
+*.log
 stripe
